@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Probando } from './componente/probando'
 
+import { CarritoApp } from './CarritoApp'
+import { BrowserRouter } from 'react-router-dom'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
   <React.StrictMode>
-  <Probando/>
-  </React.StrictMode>,
+   <CarritoApp/>
+  </React.StrictMode>  
+  </BrowserRouter>,
 )
